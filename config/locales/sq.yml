@@ -1,0 +1,558 @@
+# BigBlueButton open source conferencing system - http://www.bigbluebutton.org/.
+#
+# Copyright (c) 2018 BigBlueButton Inc. and by respective authors (see below).
+#
+# This program is free software; you can redistribute it and/or modify it under the
+# terms of the GNU Lesser General Public License as published by the Free Software
+# Foundation; either version 3.0 of the License, or (at your option) any later
+# version.
+#
+# BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License along
+# with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
+
+# Locale.
+
+sq:
+  activerecord:
+    attributes:
+      user:
+        accepted_terms: "Termat dhe Kushtet"
+        email: Email
+        name: Emer
+        password: Fjalëkalim
+        password_confirmation: Konfirmo Fjalëkalimin
+    errors:
+      models:
+        user:
+          confirmation: Fjalëkalimi nuk përputhet
+  administrator:
+    site_settings:
+      authentication:
+        disabled: Jo aktiv
+        enabled: Aktiv
+        info: Lejo vetëm përdoruesit e autorizuar të hyjne në klasë
+        title: Kërko autorizim për klasat
+        user-info: Nevojitet autorizim për të hyr në klasë
+      branding:
+        change: Ndrysho imazhin
+        info: Ndrysho imazhin e brandit që shfaqet ne cepin lartë majtas
+        placeholder: Linku i imazhit...
+        title: Imazhi i brandit
+      cache:
+        info: Pastron cache-në e ruajtur të furnizuesit e cila detyron një kërkesë të re për informacionin e azhornuar
+        title: Pastro cache-në e furnizuesit
+        button: Pastro cache-në
+      clear_auth:
+        info: Pastron vërtetuesin aktual për përdoruesit duke i lejuar ata të regjistrohen përsëri duke përdorur një metodë të ndryshme të autentifikimit
+        title: Pastro vërtetuesin aktual
+        button: Pastro Auth
+      color:
+        info: Ndryshimi i ngjyrës së rregullt do të ndryshojë si të Zbardhurën dhe të Errëtën. E Zbardhura dhe e Errëta pastaj mund të ndryshohen individualisht
+        title: Ngjyra Parësore
+        regular: E rregullt
+        lighten: E Zbardhur
+        darken: E Errët
+      log_level:
+        title: Log Level
+        information: Change the Log Level for the entire deployment
+        debug: Debug
+        info: Info
+        warn: Warn
+        error: Error
+        fatal: Fatal
+        unknown: Unknown
+      recording_visibility:
+        info: Vendosni shikueshmërinë e regjistrimit të paracaktuar për regjistrime të reja
+        title: Dukësia e regjistrimit të paracaktuar
+        warning: Ky cilësim do të zbatohet vetëm për klasat që nuk janë aktive momentalisht
+      registration:
+        info: Ndryshoni mënyrën se si përdoruesit regjistrohen në faqen e internetit
+        title: Metoda e regjistrimit
+        methods:
+          approval: Aprovo/Refuzo
+          invite: Hyrje me ftesë
+          open: Regjistrim i hapur
+      rooms:
+        info: Kufizon numrin e klasave që një përdorues mund të ketë (përfshirë klasën fillestare). Ky cilësim nuk vlen për administratorët
+        title: Numri i Klasave për Përdorues
+      shared_access:
+        info: Vendosja në jo aktiv  do të heq butonin nga zbresja e opsioneve të klasës, duke parandaluar përdoruesit të ndajnë klasat
+        title: Lejo përdoruesit të ndajnë klasat
+      subtitle: Përshtat Greenlight
+      title: Opsionet e Sitit
+    flash:
+      approved: Përdoruesi është aprovuar me sukses.
+      banned: Përdoruesi është ndaluar me sukses.
+      unbanned: Përdoruesit i'u hoq ndalesa me sukses.
+      delete: Përdoruesi u fshi me sukses
+      delete_fail: Fshirja e përdoruesit dështoi
+      demoted: Përdoruesi ul në pozitë me sukses
+      invite: Ftesa u dërgua me sukses tek %{email}
+      invite_email_verification: Duhet të aktivizohen postat elektronike për të përdorur këtë metodë. Ju lutemi kontaktoni administratorin e sistemit tuaj.
+      merge_fail: Kishte një problem në bashkimin e llogarive të përdoruesit. Ju lutemi kontrolloni përdoruesit e zgjedhur dhe provoni përsëri 
+      merge_success: Llogaritë e përdoruesve u bashkuan me sukses
+      perm_deleted: Përdoruesi është fshirë përgjithmonë
+      promoted: Përdoruesi është promovuar me sukses
+      registration_method_updated: Metoda e regjistrimit është azhurnuar me sukses
+      reset_password: Përdoruesit i është dërguar një email për të rivendosur fjalëkalimin e tyre. (Ju lutemi kërkojuni atyre të kontrollojnë dosjen e tyre të spamit nëse nuk e kanë marrë atë)
+      restored: Përdoruesi është rivendosur me sukses
+      settings: Cilësimet e sitit u ndryshuan me sukses
+      unauthorized: nuk jeni i autorizuar të kryeni veprime ndaj këtij përdoruesi
+    recordings:
+      title: Regjistrimet e serverit
+      no_recordings: Ky server nuk ka regjistrime.
+    roles:
+      appear_in_share_list: Përfshini përdoruesit me këtë rol në rrjedhën e parë për klasat e ndarjes
+      can_create_rooms: Mund të krijojë klasa
+      delete: Fshini rolin
+      invalid_create: Pati një problem në krijimin e një roli të ri. Ju lutemi kontrolloni vlerat e roleve dhe provoni përsëri
+      invalid_order: Pati një problem në përditësimin e përparësisë së rolit. Ju lutemi kontrolloni vlerat dhe provoni përsëri
+      invalid_update: Pati një problem në përditësimin e lejeve të rolit. Ju lutemi kontrolloni vlerat dhe provoni përsëri
+      manage_rooms_recordings: Lejoni përdoruesit me këtë rol të menaxhojnë klasat e serverëve dhe regjistrimet
+      name: Emri i Rolit
+      new_role: Krijo një Rol të Ri
+      role_has_users: Ky rol u është caktuar llogarive %{user_count} . Ju lutemi hiqni të gjitha llogaritë nga ky rol para se ta fshini.
+      title: Rolet
+      promote_email: Dërgoni një email për përdoruesit kur atyre u është caktuar ky rol
+      demote_email: Dërgoni një email për përdoruesit kur ata janë larguar nga ky rol
+      edit_site_settings: Lejoni përdoruesit me këtë rol të ndryshojnë cilësimet e faqes
+      edit_roles: Lejoni përdoruesit me këtë rol të ndryshojnë role të tjera
+      manage_users: Lejoni përdoruesit me këtë rol të menaxhojnë përdoruesit
+      invalid_assignment: Kishte një problem në caktimin e roleve te përdoruesi. Ju lutemi kontrolloni vlerat dhe provoni përsëri 
+      colour:
+        title: Ngjyra e roleve
+        info: Vendosni ngjyrën që do të shoqërohet me rolin
+    rooms:
+      title: Dhomat e serverëve
+      table:
+        id: ID
+        not_running: Not Running
+        running: Running
+        status: Status
+        view: View
+    title: Cilësimet e organizatës
+    users:
+      invite: Ftoni përdorues
+      edit:
+        title: Redaktoni Detajet e Përdoruesit
+      settings:
+        approve: Aprovo
+        decline: Refuzo
+        ban: Ndalo përdoruesin
+        delete: Fshije
+        edit: Modifiko
+        edit_roles: Modifiko rolet e përdoruesit
+        perm_delete: Fshij përgjithmonë
+        unban: Lej Përdoruesin
+        undelete: Riktheje
+      table:
+        authenticator: Authenticator
+        created: Krijuar
+        name: Emri
+        not_found: Asnjë përdorues nuk përputhet me kërkimin tuaj
+        no_users: Asnjë përdorues nuk u gjet
+        role: Roli
+        uid: ID e përdoruesit
+        username: Emri i përdoruesit
+      title: Menaxhoni përdoruesit
+  add_to_google_calendar: "Shto në Google Calendar"
+  bigbluebutton: BigBlueButton
+  bigbluebutton_exception: Pati një gabim kur filloi takimin!
+  cancel: Anullo
+  cookies:
+    cookie_info: Cookies na ndihmojnë të ofrojmë shërbimet tona. Duke përdorur shërbimet tona, ju pranoni të përdorni cookies.
+    cookie_button: Pranoj
+  copied: U kopjua
+  copy: Kopjo
+  date:
+    month_names: [~, Janar, Shkurt, Mars, Prill, Maj, Qershor, Korrik, Gusht, Shtator, Tetor, Nëntor, Dhjetor]
+  default_admin: Ju jeni akoma duke përdorur fjalëkalimin e paracaktuar për këtë llogari. Ju lutemi klikoni <a href="%{edit_link}">këtu</a> për ta ndryshuar atë
+  delete: Fshije
+  delivery_error: Një gabim ka ndodhur gjatë dorëzimit të postës elektronike. Ju lutemi kontaktoni një administrator!
+  docs: Dokumentacion
+  email: Email
+  email_sent: Emaili juaj %{email_type} u dërgua! (Ju lutemi kontrolloni dosjen tuaj Spam nëse nuk e keni marrë atë)
+  enter_your_name: Vendosni emrin tuaj!
+  errors:
+    bigbluebutton:
+      help: Ju lutemi sigurohuni që janë ndërmarrë hapat e duhur. <a href="%{doc_link}">Mëso më shumë</a>
+      message: Invalid BigBlueButton Endpoint and Secret
+      title: Server Error
+    internal:
+      message: Duket sikur diçka nuk shkoi në anën tonë.
+      help: Gabimi është regjistruar, do të hedhim një vështrim!
+      report: Raporto Çështjen
+    maintenance:
+      message: Na vjen keq, ne jemi duke kryer mirëmbajtje.
+      help: Do të kthehemi së shpejti!
+    migration_error:
+      contact_admin: Nëse nuk jeni administrator, ju lutemi kontaktoni një.
+      continue: Unë do të doja të qëndroja duke përdorur 1.0.
+      notice: >
+        Greenlight encountered a database migration error.<br>
+        This may be because you haven't updated to Greenlight 2.0.
+      upgrade: Më tregoni se si të përditësoj në 2.0!
+      version: Ne kemi lëshuar një version të ri të Greenlight, por baza e të dhënave tuaja nuk është e pajtueshme.
+    messages:
+      blank: nuk mund të jetë bosh
+      too_short: është shumë e shkurtër
+      invalid: është i pavlefshëm
+      taken: është marrë tashmë
+      accepted: duhet të pranohet
+      confirmation: nuk përputhet %{attribute}
+      inclusion: nuk është përfshirë në listë
+    no_provider:
+      message: Faqja në të cilën po përpiqeni të përdorni nuk është e aktivizuar
+      help: Ju lutemi kontaktoni administratorin tuaj të sistemit për të konfirmuar Greenlight
+    not_found:
+      message: Na vjen keq! Faqja që ju kërkoni nuk ekziston.
+      help: A është e mundur që është hequr?
+      user_not_found:
+        help: Ju lutemi kontaktoni një administrator.
+        message: Na vjen keq, ky përdorues nuk është i regjistruar.
+      user_missing:
+        help: ju lutemi verifikoni URL-në dhe provoni përsëri
+        message: URL që keni futur nuk është e vlefshme.
+    title: Errors
+    unauthorized:
+      message: Ju nuk keni qasje në këtë aplikacion
+      help: Nëse besoni se ky është një gabim, ju lutemi kontaktoni administratorin e sistemit tua.
+  expired_reset_token: Lidhja për rivendosjen e fjalëkalimit ka skaduar!
+  features:
+    title: Karakteristika
+    rooms: Klasa të personalizuara
+    recordings: Menaxhimi i regjistrimit
+    designs: Modelet e personalizuara
+    authentication: Autentifikimi i përdoruesit
+  footer:
+    powered_by: Mundësuar nga %{href}.
+  forgot_password:
+    subtitle: Keni harruar fjalëkalimin
+    email: Email
+    submit: Dërgo
+  go_back: Kthehu
+  greenlight: Greenlight
+  header:
+    all_recordings: Të gjitha regjistrimet
+    dropdown:
+      account_settings: Organizata
+      help: Kërkon ndihmë?
+      home: Fillim
+      settings: Profili
+      signout: Dil
+  home_room: Klasa fillestare
+  info_update_success: Informacioni u përditësua me sukses.
+  invalid_credentials: E-maili dhe fjalëkalimi që keni futur nuk përputhen me të dhënat tona. Provo përsëri ose kliko Keni harruar fjalëkalimin për të rivendosur fjalëkalimin tuaj.
+  invalid_login_method: Hyrja dështoi për shkak të mospërputhjes së llogarisë. Ju duhet të regjistroheni me omniauth.
+  invite_message: "Për të ftuar dikë në klasë, dërgojuni atyre këtë link:"
+  javascript:
+    room:
+      mailer:
+        subject: 'ju ka ftuar të shikoni një regjistrim.'
+        body: 'Për të parë regjistrimin, ndiqni linkun më poshtë:'
+        autogenerated: 'Ky e-mail gjenerohet automatikisht nga BigBlueButton.'
+        footer: 'BigBlueButton është një sistem konferencash me burim të hapur. Për më shumë informacion mbi BigBlueButton, shiko https://bigbluebutton.org/.'
+    search:
+      start: Fillo kërkimin...
+  landing:
+    about: "%{href} është një front-end i thjeshtë për serverin tuaj të konferencave BigBlueButton. Ju mund të krijoni dhomat tuaja për të pritur seanca, ose të bashkoheni me të tjerët duke përdorur një lidhje të shkurtër dhe të përshtatshme."
+    welcome: Mire se erdhet ne BigBlueButton.
+    video: Shikoni mësimin tonë për përdorimin Greenlight
+    upgrade: Më tregoni se si të përditësoj në 2.0!
+    version: Ne kemi lëshuar një version të ri të Greenlight, por baza e të dhënave tuaja nuk është e pajtueshme.
+  language_default: Default (browser language)
+  ldap_error: Nuk mund të lidhet me serverin LDAP. Ju lutemi kontrolloni konfigurimin tuaj LDAP në skedarin env dhe sigurohuni që serveri juaj po funksionon.
+  login: Hyr
+  login_title: Hyr në llogarinë tënde
+  mailer:
+    user:
+      approve:
+        info: Llogaria juaj është aprovuar.
+        signin: Për të hyrë në klasat tuaja personale, klikoni butonin më poshtë dhe regjistrohuni.
+        signin_link: Hyr
+        signup:
+          info: Një përdorues i ri është regjistruar për t'u përdorur Greenlight.
+          more-info: Për ta lejuar këtë përdorues të hyjë në Greenlight ju duhet të aprovoni llogarinë e tyre në cilësimet e organizatës.
+          admins_link: Vizitoni faqen e organizatës
+          subject: Regjistrohu si përdorues i ri
+          username: Përdoruesi u regjistrua me emrin %{name} dhe email %{email}.
+        subject: Llogaria u miratua
+        username: Emri i përdoruesit për ju %{email}.
+      demoted:
+        info: Ti nuk je më %{role} në %{url}.
+        more-info: Tani keni të njëjtat privilegje si një përdorues i rregullt.
+        root_link: Hyr
+        subtitle: "%{role} Të drejtat u shfuqizuan"
+      invite:
+        info: Ju u ftuat në hapësirën tuaj personale nga %{name}
+        signup_info: Për t'u regjistruar duke përdorur emailin tuaj, klikoni në butonin më poshtë dhe ndiqni hapat.
+        signup_link: Regjistrohu
+        signup:
+          info: Një përdorues i ftuar është regjistruar për t'u përdorur Greenlight.
+          admins_link: Vizitoni faqen e organizatës
+          subject: Regjistrim përdoruesi i ri
+          username: Përdoruesi u regjistrua me emrin %{name} dhe email %{email}.
+        subject: Ftesë për t'u bashkuar BigBlueButton
+        username: Emri juaj i përdoruesit %{email}.
+      password_reset:
+        title: 'Rivendos fjalëkalimin'
+        welcome: është kërkuar rivendosje fjalëkalimi për adresën email <b>%{email}</b>
+        message: 'Nëse e keni kërkuar këtë rivendosje, atëherë ju lutemi klikoni në linkun më poshtë për të rivendosur fjalëkalimin tuaj:'
+        reset_link: Rivendos fjalëkalimin
+        expire: Ky link do të skadojë për dy orë.
+        ignore: Ju mund ta injoroni me siguri këtë email nëse nuk e keni bërë këtë kërkesë.
+      promoted:
+        admins_link: Vizitoni faqen e organizatës
+        info: Ju jeni tani një %{role} në %{url}.
+        more-info: Për të parë mundësitë tuaja të reja, ju lutemi vizitoni %{url}.
+        subtitle: "%{role} Të drejtat u konfirmuan"
+      verify_email:
+        welcome: Mirësevini në hapësirën tuaj personale, %{name}!
+        success: Duke përdorur %{bigbluebutton}, ju mund të krijoni klasat tuaja për të pritur seancat dhe të bashkëpunoni me të tjerët.
+        username: Emri juaj i përdoruesit është %{email}.
+        verify: Për të verifikuar llogarinë tuaj, thjesht klikoni butonin më poshtë.
+        verify_text: 'Për të verifikuar llogarinë tuaj, thjesht ndiqni këtë link: %{url}'
+        verify_link: Verifiko Llogarinë
+        thanks: Faleminderit për bashkimin ju urojmë një ditë të shkëlqyeshme!
+  maintenance:
+    window_alert: Dritarja e mirëmbajtjes e planifikuar për %{date}
+  max_concurrent: është arritur numri maksimal i seancave të njëkohshme të lejuara!
+  merged: U Shkri
+  modal:
+    create_role:
+      create: Krijoni një rol të ri
+      footer_text: Ju mund të redaktoni lejet individuale për këtë rol pasi të keni krijuar atë
+      name_placeholder: Vendosni një emër roli...
+      not_blank: Emri i roleve nuk mund të jetë bosh.
+      title: Krijoni një rol të ri
+    create_room:
+      access_code: Kodi hyrjes
+      access_code_placeholder: Gjeneroni një kod aksesi opsional për klasën
+      auto_join: Më fut automatikisht në klasë
+      create: Krijo klasë
+      free_delete: Mund t'a fshini këtë klasë në cdo moment.
+      name_placeholder: Vendos emrin e klasës...
+      not_blank: Emri i klasës nuk mund të lihet bosh.
+      title: Krijo klasë të re
+    delete_account:
+      confirm: Jeni i sigurt që doni të fshini këtë llogari?
+      delete: Jam i sigurt, fshini këtë llogari.
+      keep: Në fakt, do ta mbaj.
+      delete_warning: Kjo do të çaktivizojë llogarinë e përdoruesit. Të gjithë përdoruesit e çaktivizuar mund të gjenden nën skedën e fshirjeve.
+      warning: Ky vendim është përfundimtar. Ju <b>nuk</b> do të jeni në gjendje të rikuperoni të dhënat e shoqëruara.
+    delete_room:
+      confirm: Jeni i sigurt që dëshironi të fshini %{room}?
+      delete: Jam i sigurt, fshini këtë dhomë.
+      keep: Në mendimin e dytë, unë do ta mbaj atë.
+      warning: Ju <b>nuk</b> mund të jeni në gjendje të rikuperoni klasën
+      recording_warning: ose ndonjë prej %{recordings_num} regjistrimet e shoqëruara.
+    invite_user:
+      email_placeholder: Vendosni email-et e përdoruesve (të ndara me presje)
+      footer: Përdoruesi do të marrë një email me udhëzime se si të regjistrohet
+      send: Dërgo ftesë
+      title: Fto përdorues
+    login:
+      or: ose
+      with: Hyr me %{provider}
+      forgot_password: Harrove fjalëkalimin?
+    rename_recording:
+    remove_shared:
+      title: A jeni i sigurt që doni ta hiqni këtë klasë nga lista e klasave tuaja?
+      delete: Jam i sigurt, hiqeni këtë dhomë.
+      warning: Ju <b>nuk</b> do të jeni në gjendje të hyni më në këtë klasë.
+    room_settings:
+      title: Cilësimet e klasës
+      update: Përditëso Klasën
+      client: Zgjidhni llojin e klientit
+      join_moderator: Të gjithë përdoruesit futen si moderatorë
+      mute: Mos lejo audio kur futen përdoruesit
+      require_approval: Lejo hyrjen vetëm me miratimin e moderatorit
+      start: Lejo çdo përdorues të fillojë këtë takim
+      footer_text: Rregullimi në klasën tuaj mund të bëhet në çdo kohë.
+    rename_room:
+      name_placeholder: Vendosni një emër të ri të klasës...
+    share_access:
+      footer: Ndarja e një klase me një përdorues u lejon atyre të fillojnë klasën dhe të shikojnë regjistrimet e klasës
+      list: Ndarë me
+      title: Nda Aksesin e Klasës
+      save: Ruaj Ndryshimet
+      cancel_changes: Anullo Ndryshimet
+      select: Zgjidh përdoruesin
+    merge_user:
+      cancel: Anullo
+      from: Llogaria për t'u shkrirë
+      title: Shkri llogaritë e përdoruesve
+      to: Llogaria primare
+      save: Shkri
+      footer: Klasat e llogarisë për t'u bashkuar (shkrirë) do të transferohen në listën e klasave të Llogarisë Themelore dhe më pas llogaria do të fshihet.
+  name_update_success: Emri i klasës u ndryshua me sukses!
+  no_user_email_exists: Nuk ka përdorues ekzistues me emailin e specifikuar. Ju lutemi sigurohuni që ta keni shtypur saktë.
+  omniauth_error: Ndodhi një gabim gjatë vërtetimit me omniauth. Ju lutemi provoni përsëri ose kontaktoni një administrator!
+  omniauth_specific_error: "%{error} ndodhi ndërsa vërtetohej me omniauth. Ju lutemi provoni përsëri ose kontaktoni një administrator!"
+  pagy:
+    nav:
+      prev: "&lsaquo; Mbas"
+      next: "Para &rsaquo;"
+      gap: "&hellip;"
+  password: Fjalëkalimi
+  password_empty_notice: Fjalëkalimi nuk mund të lihet bosh.
+  password_reset_success: Fjalëkalimi është rivendosur.
+  password_different_notice: Konfirmimi i fjalëkalimit nuk përputhet.
+  provider:
+    google: Google
+    office365: Office 365
+    twitter: Twitter
+    ldap: LDAP
+  recaptcha:
+    errors:
+      recaptcha_unreachable: Oops, ne nuk arritëm të vërtetojmë përgjigjen tuaj reCAPTCHA. Ju lutemi provoni përsëri.
+      verification_failed: verifikimi i reCAPTCHA dështoi, provo përsëri.
+  recording:
+    all_recordings: Të gjitha regjistrimet
+    email: Nis me Email Regjistrimet
+    error: Kishte një gabim gjatë marrjes %{count} regjistrimit(eve)
+    no_recordings: Kjo klasë nuk ka %{inject}regjistrime.
+    no_user_recordings: Për momentin nuk keni regjistrime.
+    no_matched_recordings: Asnjë %{inject} regjistrim nuk përputhet me kërkimin tuaj.
+    recorded_on: Regjistruar %{date}
+    table:
+      name: Emri
+      thumbnails: Foto
+      length: Kohëzgjatja
+      users: Përdorues
+      visibility: Dukshmëria
+      formats: Formatet
+    visibility:
+      public: Publike
+      unlisted: E Palistuar
+    format:
+      notes: Shënime
+      podcast: Podcast
+      presentation: Prezantim
+      statistics: Statistika
+      video: Video
+  registration:
+    approval:
+      fail: Llogaria juaj nuk është aprovuar ende. Nëse kanë kaluar ditë të shumta që kur jeni regjistruar, ju lutemi kontaktoni administratorin tuaj.
+      signup: Llogaria juaj u krijua me sukses. I është dërguar një administratori për miratim.
+    banned:
+      fail: Ju nuk keni qasje në këtë kërkesë. Nëse besoni se ky është një gabim, ju lutemi kontaktoni administratorin tuaj. 
+    deprecated:
+      new_signin: Zgjidhni një metodë të re të hyrjes në llogarinë tuaj. Të gjitha klasat tuaja nga llogaria juaj e vjetër do të shpërngulen në llogarinë e re
+      twitter_signin: Regjistrimi përmes Twitter është zhvlerësuar dhe do të hiqet në lëshimin tjetër. Kliko <a href="%{link}"> këtu </a> për të lëvizur llogarinë tuaj në një metodë të re të autorizimit
+      twitter_signup: Regjistrimi përmes Twitter është zhvlerësuar. Ju lutemi përdorni një metodë tjetër të regjistrimit
+      merge_success: Shkrirja me sukses në llogarinë tuaj twitter me llogarinë tuaj të re. Llogaria juaj e vjetër në twitter është fshirë
+    invite:
+      fail: Token juaj është ose e pavlefshme ose ka skaduar. Nëse besoni se ky është një gabim, ju lutemi kontaktoni administratorin tuaj.
+      no_invite: Ju nuk keni një ftesë për t'u futur. Ju lutemi kontaktoni administratorin tuaj për të marrë një të tillë.
+  remove: Hiqe
+  rename: Riemërto
+  reset_password:
+    subtitle: Rivendos Fjalëkalimin
+    password: Fjalëkalim i Ri
+    confirm: Konfirmo Fjalëkalimin e ri
+    update: Përditëso Fjalëkalimin
+    auth_change: Metoda e vërtetimit ka ndryshuar. Ju lutemi kontrolloni emailin tuaj për të vendosur fjalëkalimin tuaj.
+  roles:
+    active: Aktive
+    admin: Admin
+    banned: Banned
+    deleted: Fshirë
+    pending: Në Pritje
+    user: Përdorues
+  room:
+    access_code_required: Ju lutemi shkruani një kod të vlefshëm të hyrjes për t'u futur në klasë
+    create_room: Krijo klasë
+    create_room_error: Pati një gabim në krijimin e klasës
+    create_room_success: Klasa u krijua me sukses
+    delete:
+      home_room: Nuk mund të fshihet Klasa fillestare e përdoruesit
+      success: Klasa u fshi me sukses
+      fail: Dështoi të fshijë klasën (%{error})
+    enter_the_access_code: Vendosni kodin e hyrjes së klasës
+    invalid_provider: Ju keni vendosur një url të pavlefshëm. Ju lutemi kontrolloni url dhe provoni përsëri.
+    invited: Ju jeni ftuar të bashkoheni
+    invite_participants: Fto pjesëmarrës
+    join: Bashkohu
+    last_session: Seanca e fundit në %{session}
+    login: Hyr
+    owner: Pronari
+    owner_banned: Kjo klasë është aktualisht e padisponueshme
+    no_room:
+      description: Vendosni urlën e klasë ose ID -në e klasës për klasën ku dëshironi të bashkoheni.
+      edit_profile: Ndrysho profilin e përdoruesit
+      go_to: Shko në Klasën
+      invalid_room_uid: URL/UID që keni vendosur është e pavlefshme.
+      placeholder: URL/UID e klasës
+      no_recent_rooms: nuk keni asnjë klasë në të cilën jeni futur kohët e fundit
+      recent_rooms: Go To a Recently Joined Room
+      title: Futu në një Klasë
+    no_sessions: Kjo klasë ende nuk ka seanca aktive!
+    recordings: Regjistrimet e klasave
+    room_limit: Ju keni arritur numrin maksimal të klasave të lejuara
+    room_limit_exceeded: Ju keni tejkaluar numrin e klasave të lejuara. Ju lutemi fshini %{difference} klasa(t) për të hyrë në këtë klasë.
+    sessions: Seancat
+    settings: Cilësimet e Klasës
+    share: Menaxho Aksesin
+    shared_by: Ndarë nga %{email}
+    remove_shared_access_success: U hoq me sukses ndarja e klasës nga lista juaj e klasave
+    remove_shared_access_error: Pati një gabim në heqjen e klasës së përbashkët nga lista juaj
+    shared_access_success: Klasa u nda me sukses
+    shared_access_error: Kishte një gabim në ndarjen e klasës
+    start: Fillo
+    unavailable: Kjo klasë është aktualisht e padisponueshme për shkak të mos verifikimit të emailit të pronarit.
+    update_settings_error: Kishte një gabim në përditësimin e cilësimeve të dhomës
+    update_settings_success: Cilësimet e klasës janë përditësuar me sukses
+    wait:
+      message: Mësimi nuk ka filluar ende.
+      auto: Do të futeni automatikisht kur të fillojë mësimi.
+  settings:
+    account:
+      fullname: Emri i plotë
+      language: Gjuha
+      provider: Ofruesi
+      image: Foto
+      image_url: URL-ja e fotos së profilit
+      roles: Rolet e Përdoruesit
+      subtitle: Përditëso të dhënat e llogarisë
+      title: Info Llogarie
+    delete:
+      button: Po, unë do të doja të fshija llogarinë time.
+      disclaimer: Nëse vendosni të fshini llogarinë tuaj, <b>NUK</b> të rikuperohet më. Të gjitha informacionet në lidhje me llogarinë tuaj, përfshirë cilësimet, klasat dhe regjistrimet do të hiqen.
+      subtitle: Fshini në mënyrë të përhershme llogarinë tua
+      title: Fshije llogarine
+    password:
+      confirmation: Konfirmimi i ri i fjalëkalimit
+      new: Fjalëkalim i ri
+      old: Fjalëkalimi i vjetër
+      subtitle: Ndryshoni fjalëkalimin tuaj
+      title: Fjalëkalim
+    title: Profili
+    search: Kërko
+  signup:
+    password_confirm: Konfirmimi i fjalëkalimit
+    subtitle: Krijo një llogari
+    title: Regjistrohu
+    with: Regjistrohu me %{provider}
+  terms:
+    accept: Pranoj %{href}
+    accept_existing: Unë i pranoj termat dhe kushtet
+    title: Termat dhe Kushtet
+  test_install: >
+    This deployment is using a pre-configured testing server, you should replace this with your own.
+    For details, see the %{href}.
+  update: Përditëso
+  verify:
+    accept: Verifiko
+    activated: llogaria u verifikua!
+    already_verified: Llogaria është verifikuar
+    invalid: Link i pavlefshme i verifikimit
+    not_verified: Llogaria juaj nuk është verifikuar ende.
+    resend: Rivendosni emailin e verifikimit
+    signin: Ju lutemi identifikohuni për të hyrë në llogarinë tuaj.
+    title: Verifikoni emailin tuaj
+    verification: Verifikim
